@@ -53,6 +53,13 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+		  <id>nexus</id>
+		  <name>Nexus</name>
+		  <url>https://ssebuild.sit.fraunhofer.de/nexus/repository/kryo</url>
+		</repository>
+	  </distributionManagement>
 	<build>
 		<!-- Set nonstandard source and test source dirs -->
 		<sourceDirectory>src</sourceDirectory>
@@ -64,8 +71,8 @@
         			<artifactId>maven-compiler-plugin</artifactId>
         			<version>3.1</version>
         			<configuration>
-          				<source>1.5</source>
-          				<target>1.5</target>
+          				<source>1.7</source>
+          				<target>1.7</target>
         			</configuration>
       			</plugin>
 			<!-- Disable resources (project has none) -->
